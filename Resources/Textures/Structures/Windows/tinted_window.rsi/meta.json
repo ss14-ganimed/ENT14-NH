@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/           f141c349e063f7318d8c8a2417d840f0b2d06600, modified",
+  "copyright": "Taken from https://github.com/discordia-space/CEV-Eris/blob/c0293684320e7b70cbcac932b8dddeee35f3a51f/icons/obj/structures/windows.dmi",
   "size": {
     "x": 32,
     "y": 32
@@ -11,35 +11,35 @@
       "name": "full"
     },
     {
-      "name": "twindow0",
+      "name": "window0",
       "directions": 4
     },
     {
-      "name": "twindow1",
+      "name": "window1",
       "directions": 4
     },
     {
-      "name": "twindow2",
+      "name": "window2",
       "directions": 4
     },
     {
-      "name": "twindow3",
+      "name": "window3",
       "directions": 4
     },
     {
-      "name": "twindow4",
+      "name": "window4",
       "directions": 4
     },
     {
-      "name": "twindow5",
+      "name": "window5",
       "directions": 4
     },
     {
-      "name": "twindow6",
+      "name": "window6",
       "directions": 4
     },
     {
-      "name": "twindow7",
+      "name": "window7",
       "directions": 4
     }
   ]
