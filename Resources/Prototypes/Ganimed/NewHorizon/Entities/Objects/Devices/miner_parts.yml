@@ -1,0 +1,14 @@
+- type: entity
+  name: miner parts
+  parent: BaseItem
+  id: MinerParts
+  description: An experimental parts.
+  components:
+  - type: Sprite
+    sprite: Ganimed\NewHorizon\Objects\Devices\minerparts.rsi
+    state: minerpart
+  - type: Item
+    size: Ginormous
+  - type: Tag
+    tags:
+    - MinerParts
