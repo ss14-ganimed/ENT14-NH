@@ -1,0 +1,13 @@
+﻿- type: constructionGraph
+  id: MinerCraft
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: upgraded
+          steps:
+            - tag: MinerParts
+              doAfter: 30
+
+    - node: upgraded
+      entity: Miner

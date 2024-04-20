@@ -1339,3 +1339,6 @@
 
 - type: Tag
   id: HidesTail
+
+- type: Tag
+  id: MinerParts

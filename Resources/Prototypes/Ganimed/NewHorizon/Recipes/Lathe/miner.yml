@@ -1,0 +1,34 @@
+- type: latheRecipe
+  id: SteelOre
+  result: SteelOre
+  completetime: 300
+
+- type: latheRecipe
+  id: SpaceQuartz
+  result: SpaceQuartz
+  completetime: 300
+
+- type: latheRecipe
+  id: GoldOre
+  result: GoldOre
+  completetime: 600
+
+- type: latheRecipe
+  id: SilverOre
+  result: SilverOre
+  completetime: 600
+
+- type: latheRecipe
+  id: UraniumOre
+  result: UraniumOre
+  completetime: 600
+
+- type: latheRecipe
+  id: BananiumOre
+  result: BananiumOre
+  completetime: 300
+
+- type: latheRecipe
+  id: PlasmaOre
+  result: PlasmaOre
+  completetime: 500
