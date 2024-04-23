@@ -49,3 +49,25 @@
   noSpawn: true
   components:
     - type: Transform
+
+- type: entity
+  id: StandardNanotrasenShip
+  parent:
+    - BaseStation
+    - BaseStationNews
+    - BaseStationCargo
+    - BaseStationJobsSpawning
+    - BaseStationRecords
+    - BaseStationGateway
+    - BaseStationShuttles
+    - BaseStationCentcomm
+    - BaseStationEvacuation
+    - BaseStationAlertLevels
+    - BaseStationMagnet
+    - BaseStationExpeditions
+    - BaseStationSiliconLawRandomised
+    - BaseStationAllEventsEligible
+    - BaseStationNanotrasen
+  noSpawn: true
+  components:
+    - type: Transform

@@ -6,7 +6,7 @@
   maxPlayers: 5
   stations:
     Reach:
-      stationProto: StandardNanotrasenStation
+      stationProto: StandardNanotrasenShip
       components:
         - type: StationNameSetup
           mapNameTemplate: '{0} Рич {1}'
