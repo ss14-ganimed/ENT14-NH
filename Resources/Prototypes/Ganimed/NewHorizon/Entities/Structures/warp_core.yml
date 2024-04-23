@@ -1,0 +1,59 @@
+- type: entity
+  parent: BaseGenerator
+  id: WarpCore
+  name: Warp core
+  description: A Radioisotope Thermoelectric Generator for long term power. This one has damaged shielding.
+  suffix: 100MW
+  components:
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-1.5,-1.5,1.5,1.5"
+        density: 15
+        mask:
+        - LargeMobMask
+        layer:
+        - WallLayer
+  - type: Anchorable
+    delay: 50
+  - type: PowerSupplier
+    supplyRate: 10000000
+  - type: Sprite
+    sprite: Ganimed\NewHorizon\Structures\warp_core.rsi
+    layers:
+      - state: warp_core
+  - type: RadiationSource
+    intensity: 20
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 500
+      behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 250
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:ExplodeBehavior
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          SheetSteel1:
+            min: 10
+            max: 30
+          SheetUranium1:
+            min: 10
+            max: 30
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Explosive
+    explosionType: Radioactive
+    maxIntensity: 10000
+    intensitySlope: 20
+    totalIntensity: 20000
