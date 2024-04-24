@@ -15,6 +15,9 @@
       materialRequirements:
         Glass: 15
         Steel: 15
+        Titanium: 15
+        Gold: 5
+        Uranium: 20
         CableHV: 5
       tagRequirements:
         GlassBeaker:

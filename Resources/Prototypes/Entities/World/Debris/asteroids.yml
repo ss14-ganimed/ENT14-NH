@@ -37,6 +37,8 @@
             orGroup: rock
           - id: WallRockPlasma
             prob: 0.05
+          - id: WallRockTitanium
+            prob: 0.05
             orGroup: rock
           - id: WallRockUranium
             prob: 0.02

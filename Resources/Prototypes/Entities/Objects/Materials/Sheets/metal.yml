@@ -229,3 +229,56 @@
   - type: Stack
     stackType: Plasteel
     count: 1
+
+- type: entity
+  parent: SheetMetalBase
+  id: SheetTitanium
+  name: titanium
+  suffix: Full
+  components:
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      Titanium: 100
+  - type: Stack
+    stackType: Titanium
+    baseLayer: base
+    layerStates:
+    - titanium
+    - titanium_2
+    - titanium_3
+  - type: Sprite
+    state: titanium_3
+    layers:
+    - state: titanium_3
+      map: ["base"]
+  - type: Item
+    heldPrefix: titanium
+  - type: Appearance
+  - type: FloorTile
+    outputs:
+    - Plating
+
+- type: entity
+  parent: SheetTitanium
+  id: SheetTitanium10
+  name: titanium
+  suffix: 10
+  components:
+  - type: Sprite
+    state: titanium
+  - type: Stack
+    stackType: Titanium
+    count: 10
+
+- type: entity
+  parent: SheetTitanium
+  id: SheetTitanium1
+  name: titanium
+  suffix: Single
+  components:
+  - type: Sprite
+    state: titanium
+  - type: Stack
+    stackType: Titanium
+    count: 1

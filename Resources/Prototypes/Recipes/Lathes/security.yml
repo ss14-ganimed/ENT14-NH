@@ -56,9 +56,10 @@
   category: Weapons
   completetime: 5
   materials:
-    Steel: 1500
+    Steel: 1200
     Glass: 1000
     Gold: 850
+    Titanium: 200
 
 - type: latheRecipe
   id: WeaponLaserCannon
@@ -95,27 +96,29 @@
   result: WeaponImmolator
   completetime: 5
   materials:
-    Steel: 2000
+    Steel: 1000
     Glass: 500
     Plastic: 350
     Gold: 200
+    Titanium: 500
 
 - type: latheRecipe
   id: WeaponEnergySniperRifle
   result: WeaponEnergySniperRifle
   completetime: 10
   materials:
-    Steel: 2000
+    Steel: 1800
     Glass: 750
     Plastic: 300
     Gold: 300
+    Titanium: 200
 
 - type: latheRecipe
   id: WeaponIonRifleGun
   result: WeaponIonRifleGun
   completetime: 25
   materials:
-    Steel: 3000
+    Titanium: 1000
     Glass: 1000
     Plastic: 450
     Gold: 500

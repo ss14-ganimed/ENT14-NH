@@ -21,3 +21,11 @@
   spawn: SheetBrass1
   maxCount: 30
   itemSize: 1
+
+- type: stack
+  id: Titanium
+  name: titanium
+  icon: { sprite: /Textures/Objects/Materials/Sheets/metal.rsi, state: titanium }
+  spawn: SheetTitanium1
+  maxCount: 30
+  itemSize: 1

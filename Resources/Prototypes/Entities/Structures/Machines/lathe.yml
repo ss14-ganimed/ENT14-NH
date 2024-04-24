@@ -1093,6 +1093,7 @@
         - IngotGold30
         - IngotSilver30
         - MaterialBananium10
+        - SheetTitanium30
 
 - type: entity
   parent: OreProcessor
@@ -1121,7 +1122,8 @@
       - IngotGold30
       - IngotSilver30
       - MaterialBananium10
-
+      - SheetTitanium30
+      
 - type: entity
   parent: BaseLathe
   id: Sheetifier

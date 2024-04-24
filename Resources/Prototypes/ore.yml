@@ -51,6 +51,12 @@
   maxOreYield: 2
 
 - type: ore
+  id: OreTitanium
+  oreEntity: TitaniumOre1
+  minOreYield: 1
+  maxOreYield: 2
+
+- type: ore
   id: OreUranium
   oreEntity: UraniumOre1
   minOreYield: 1

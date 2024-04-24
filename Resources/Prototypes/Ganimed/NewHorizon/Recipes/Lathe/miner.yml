@@ -32,3 +32,8 @@
   id: PlasmaOre
   result: PlasmaOre
   completetime: 500
+
+- type: latheRecipe
+  id: TitaniumOre
+  result: TitaniumOre
+  completetime: 300

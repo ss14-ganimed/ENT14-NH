@@ -1,0 +1,9 @@
+ent-SheetTitanium = титан
+    .suffix = Полный
+    .desc = { ent-SheetMetalBase.desc }
+ent-SheetTitanium10 = титан
+    .suffix = 10
+    .desc = { ent-SheetSteel.desc }
+ent-SheetTitanium1 = титан
+    .suffix = Один
+    .desc = { ent-SheetSteel.desc }

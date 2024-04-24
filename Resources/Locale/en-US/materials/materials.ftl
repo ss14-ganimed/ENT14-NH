@@ -6,6 +6,7 @@ materials-reinforced-plasma-glass = reinforced plasma glass
 
 # Metals
 materials-steel = steel
+materials-titanium = titanium
 materials-gold = gold
 materials-silver = silver
 materials-plasteel = plasteel
@@ -29,6 +30,7 @@ materials-gunpowder = gunpowder
 
 # Ores
 materials-raw-iron = raw iron
+materials-raw-titanium = raw titanium
 materials-raw-quartz = raw quartz
 materials-raw-gold = raw gold
 materials-raw-silver = raw silver

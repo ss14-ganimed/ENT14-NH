@@ -120,8 +120,9 @@
   category: Tools
   completetime: 5
   materials:
-    Steel: 500
+    Steel: 300
     Glass: 400
+    Titanium: 200
 
 - type: latheRecipe
   id: WeaponGauntletGorilla
@@ -129,41 +130,45 @@
   category: Tools
   completetime: 5
   materials:
-    Steel: 1500
+    Steel: 1000
     Plastic: 300
     Glass: 500
     Plasma: 500
     Silver: 250
+    Titanium: 250
 
 - type: latheRecipe
   id: ClothingBackpackHolding
   result: ClothingBackpackHolding
   completetime: 5
   materials:
-    Steel: 2000
+    Steel: 1500
     Silver: 750
     Plasma: 1500
     Uranium: 150
+    Titanium: 500
 
 - type: latheRecipe
   id: ClothingBackpackSatchelHolding
   result: ClothingBackpackSatchelHolding
   completetime: 5
   materials:
-    Steel: 2000
+    Steel: 1500
     Silver: 750
     Plasma: 1500
     Uranium: 150
+    Titanium: 500
 
 - type: latheRecipe
   id: ClothingBackpackDuffelHolding
   result: ClothingBackpackDuffelHolding
   completetime: 5
   materials:
-    Steel: 2000
+    Steel: 1500
     Silver: 750
     Plasma: 1500
     Uranium: 150
+    Titanium: 500
 
 - type: latheRecipe
   id: OreBagOfHolding
@@ -200,18 +205,20 @@
   category: Tools
   completetime: 5
   materials:
-    Steel: 500
+    Steel: 300
     Glass: 400
     Silver: 200
+    Titanium: 100
 
 - type: latheRecipe
   id: DeviceQuantumSpinInverter
   result: DeviceQuantumSpinInverter
   completetime: 5
   materials:
-    Steel: 700
+    Steel: 500
     Glass: 100
     Uranium: 100
+    Titanium: 100
 
 - type: latheRecipe
   id: WeaponProtoKineticAccelerator
@@ -229,9 +236,10 @@
   category: Tools
   completetime: 5
   materials:
-    Steel: 500
+    Steel: 200
     Glass: 400
     Silver: 100
+    Titanium: 100
 
 - type: latheRecipe
   id: WeaponGrapplingGun

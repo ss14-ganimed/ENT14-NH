@@ -70,3 +70,11 @@
   spawn: Salt1
   maxCount: 30
   itemSize: 2
+
+- type: stack
+  id: TitaniumOre
+  name: titanium ore
+  icon: { sprite: /Textures/Objects/Materials/ore.rsi, state: titanium }
+  spawn: TitaniumOre1
+  maxCount: 30
+  itemSize: 2
