@@ -1,0 +1,15 @@
+- type: latheRecipe
+  id: PlastitaniumSheet
+  result: SheetPlastitanium
+  completetime: 2
+  materials:
+    Titanium: 1500
+    Plasteel: 1500
+
+- type: latheRecipe
+  id: PlasteelSheet
+  result: SheetPlasteel
+  completetime: 2
+  materials:
+    Steel: 6000
+    Plasma: 3000

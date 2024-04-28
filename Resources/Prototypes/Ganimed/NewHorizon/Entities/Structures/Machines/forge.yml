@@ -1,0 +1,30 @@
+- type: entity
+  id: Forge
+  parent: BaseLathe
+  name: forge
+  description: Converts raw materials into useful objects.
+  components:
+  - type: Sprite
+    sprite: Ganimed\NewHorizon\Structures\Machines\forge.rsi
+    snapCardinals: true
+    layers:
+    - state: icon
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: unlit
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+  - type: Machine
+    board: ForgeMachineCircuitboard
+  - type: MaterialStorage
+    whitelist:
+      tags:
+        - Sheet
+        - Ingot
+  - type: Lathe
+    idleState: icon
+    runningState: building
+    staticRecipes:
+    - PlastitaniumSheet
+    - PlasteelSheet
+#    dynamicRecipes:
+#      - a

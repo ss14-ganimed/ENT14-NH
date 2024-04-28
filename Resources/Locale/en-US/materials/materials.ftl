@@ -7,6 +7,7 @@ materials-reinforced-plasma-glass = reinforced plasma glass
 # Metals
 materials-steel = steel
 materials-titanium = titanium
+materials-plastitaniumtitanium = plastitanium
 materials-gold = gold
 materials-silver = silver
 materials-plasteel = plasteel

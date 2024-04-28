@@ -310,6 +310,17 @@
               amount: 2
               doAfter: 1
 
+        - to: wallplastitanium
+          completed:
+            - !type:SnapToGrid
+              southRotation: true
+          conditions:
+            - !type:EntityAnchored { }
+          steps:
+            - material: Plastitanium
+              amount: 2
+              doAfter: 1
+
         - to: shuttleWall
           completed:
             - !type:SnapToGrid
@@ -513,3 +524,55 @@
           steps:
             - tool: Welding
               doAfter: 5
+
+    - node: wallplastitanium
+      entity: WallPlastitanium
+      edges:
+        - to: reinforcedGirder
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetPlastitanium1
+              amount: 2
+          steps:
+            - tool: Cutting
+              doAfter: 1
+              completed:
+                - !type:VisualizerDataInt
+                  key: "enum.ReinforcedWallVisuals.DeconstructionStage"
+                  data: 5
+            - tool: Screwing
+              doAfter: 1
+            - tool: Welding
+              doAfter: 5
+              completed:
+                - !type:VisualizerDataInt
+                  key: "enum.ReinforcedWallVisuals.DeconstructionStage"
+                  data: 4
+            - tool: Prying
+              doAfter: 1
+            - tool: Anchoring
+              doAfter: 1
+              completed:
+                - !type:VisualizerDataInt
+                  key: "enum.ReinforcedWallVisuals.DeconstructionStage"
+                  data: 3
+            - tool: Welding
+              doAfter: 10
+              completed:
+                - !type:VisualizerDataInt
+                  key: "enum.ReinforcedWallVisuals.DeconstructionStage"
+                  data: 2
+            - tool: Prying
+              doAfter: 1
+              completed:
+                - !type:VisualizerDataInt
+                  key: "enum.ReinforcedWallVisuals.DeconstructionStage"
+                  data: 1
+            - tool: Screwing
+              doAfter: 1
+              completed:
+                - !type:VisualizerDataInt
+                  key: "enum.ReinforcedWallVisuals.DeconstructionStage"
+                  data: 0
+            - tool: Cutting
+              doAfter: 1

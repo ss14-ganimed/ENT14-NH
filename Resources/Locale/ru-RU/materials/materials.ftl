@@ -6,6 +6,7 @@ materials-reinforced-plasma-glass = плазменное бронестекло
 # Metals
 materials-steel = сталь
 materials-titanium = титан
+materials-plastitanium = пластитан
 materials-gold = золото
 materials-silver = серебро
 materials-plasteel = пласталь

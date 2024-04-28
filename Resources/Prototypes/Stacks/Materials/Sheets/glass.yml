@@ -53,3 +53,11 @@
   spawn: SheetClockworkGlass1
   maxCount: 30
   itemSize: 1
+
+- type: stack
+  id: PlastitaniumGlass
+  name: plastitanium glass
+  icon: { sprite: /Textures/Objects/Materials/Sheets/glass.rsi, state: plastitaniumglass }
+  spawn: SheetPlastitaniumGlass1
+  maxCount: 30
+  itemSize: 1

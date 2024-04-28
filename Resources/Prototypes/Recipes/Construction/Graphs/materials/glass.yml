@@ -82,6 +82,16 @@
             - material: Brass
               amount: 1
 
+        - to: SheetPlastitaniumGlass
+          completed:
+            - !type:SetStackCount
+              amount: 1
+          steps:
+            - material: Glass
+              amount: 1
+            - material: Plastitanium
+              amount: 1
+
         - to: SheetRUGlass0
           completed:
             - !type:SetStackCount
@@ -128,6 +138,9 @@
       
     - node: SheetClockworkGlass
       entity: SheetClockworkGlass
+
+    - node: SheetPlastitaniumGlass
+      entity: SheetPlastitaniumGlass
 
     - node: SheetRUGlass0
       entity: SheetRUGlass

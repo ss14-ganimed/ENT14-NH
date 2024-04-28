@@ -32,6 +32,17 @@
   objectType: Item
 
 - type: construction
+  name: plastitanium glass
+  description: A brass-reinforced sheet of glass.
+  id: SheetPlastitaniumGlass
+  graph: Glass
+  startNode: start
+  targetNode: SheetPlastitaniumGlass
+  category: construction-category-materials
+  icon: { sprite: Objects/Materials/Sheets/glass.rsi, state: plastitaniumglass }
+  objectType: Item
+
+- type: construction
   name: plasma glass
   description: A sheet of translucent plasma.
   id: SheetPGlass

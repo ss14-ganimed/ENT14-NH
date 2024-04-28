@@ -7,3 +7,13 @@ ent-SheetTitanium10 = титан
 ent-SheetTitanium1 = титан
     .suffix = Один
     .desc = { ent-SheetSteel.desc }
+
+ent-SheetPlastitanium = пластитан
+    .suffix = Полный
+    .desc = { ent-SheetMetalBase.desc }
+ent-SheetPlastitanium10 = пластитан
+    .suffix = 10
+    .desc = { ent-SheetSteel.desc }
+ent-SheetPlastitanium1 = пластитан
+    .suffix = Один
+    .desc = { ent-SheetSteel.desc }
