@@ -28,17 +28,17 @@
   category: cargoproduct-category-name-engineering
   group: market
 
-#- type: cargoProduct
-#  name: "emitter crate"
-#  id: EngineSingularityEmitter
-#  description: "Contains an emitter. Used only for dangerous applications."
-#  icon:
-#    sprite: Structures/Power/Generation/Singularity/emitter.rsi
-#    state: emitter2
-#  product: CrateEngineeringSingularityEmitter
-#  cost: 3000
-#  category: cargoproduct-category-name-engineering
-#  group: market
+- type: cargoProduct
+  name: "emitter crate"
+  id: EngineSingularityEmitter
+  description: "Contains an emitter. Used only for dangerous applications."
+  icon:
+    sprite: Structures/Power/Generation/Singularity/emitter.rsi
+    state: emitter2
+  product: CrateEngineeringSingularityEmitter
+  cost: 3000
+  category: cargoproduct-category-name-engineering
+  group: market
 
 - type: cargoProduct
   id: EngineSingularityCollector
@@ -98,4 +98,24 @@
   product: CrateEngineeringTeslaGroundingRod
   cost: 400
   category: cargoproduct-category-name-engineering
+  group: market
+
+- type: cargoProduct
+  id: EngineAmeControl
+  icon:
+    sprite: Structures/Power/Generation/ame.rsi
+    state: control
+  product: CrateEngineeringAMEControl
+  cost: 2000
+  category: Engineering
+  group: market
+
+- type: cargoProduct
+  id: EngineAmeShielding
+  icon:
+    sprite: Objects/Devices/flatpack.rsi
+    state: ame-part
+  product: CrateEngineeringAMEShielding
+  cost: 6000
+  category: Engineering
   group: market

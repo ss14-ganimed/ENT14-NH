@@ -54,6 +54,31 @@
 
 - type: entity
   parent: ClothingEyesBase
+  id: ClothingEyesGlassesMesonScanner
+  name: engineering goggles #less confusion
+  description: Green-tinted goggles using a proprietary polymer that provides protection from eye damage of all types.
+  components:
+  - type: Sprite
+    sprite: Ganimed/Clothing/Eyes/mesonscanner.rsi
+    layers:
+    - state: icon
+    - state: icon_enabled
+      map: [ "enum.ToggleVisuals.Layer" ]
+      visible: false
+  - type: GenericVisualizer
+    visuals:
+      enum.ToggleVisuals.Toggled:
+        enum.ToggleVisuals.Layer:
+          True: {visible: true}
+          False: {visible: false}
+  - type: Clothing
+    sprite: Ganimed/Clothing/Eyes/mesonscanner.rsi
+  - type: EyeProtection
+  - type: Mesons
+    mesonType: Walls
+
+- type: entity
+  parent: ClothingEyesBase
   id: ClothingEyesGlassesMeson
   name: engineering goggles #less confusion
   description: Green-tinted goggles using a proprietary polymer that provides protection from eye damage of all types.
@@ -167,7 +192,7 @@
     - WhitelistChameleon
 
 - type: entity
-  parent: ClothingEyesBase
+  parent: [ClothingEyesBase, ShowSecurityIcons]
   id: ClothingEyesGlassesSecurity
   name: security glasses
   description: Upgraded sunglasses that provide flash immunity and a security HUD.
@@ -189,7 +214,6 @@
   - type: GuideHelp
     guides:
     - Security
-  - type: ShowSecurityIcons
   - type: IdentityBlocker
     coverage: EYES
 
@@ -235,18 +259,6 @@
     - type: Clothing
       sprite: Clothing/Eyes/Glasses/science.rsi
     - type: SolutionScanner
-
-- type: entity
-  parent: ClothingEyesBase
-  id: ClothingEyesVisorNinja
-  name: ninja visor
-  description: An advanced visor protecting a ninja's eyes from flashing lights.
-  components:
-  - type: Sprite
-    sprite: Clothing/Eyes/Glasses/ninjavisor.rsi
-  - type: Clothing
-    sprite: Clothing/Eyes/Glasses/ninjavisor.rsi
-  - type: FlashImmunity
 
 - type: entity
   parent: ClothingEyesBase

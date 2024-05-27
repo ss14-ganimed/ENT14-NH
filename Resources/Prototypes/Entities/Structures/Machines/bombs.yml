@@ -9,8 +9,9 @@
     - type: WiresVisuals
     - type: InteractionOutline
     - type: UserInterface
+    - type: MesonsNonviewable
       interfaces:
-        - key: enum.WiresUiKey.Key
+        enum.WiresUiKey.Key:
           type: WiresBoundUserInterface
     - type: Wires
       layoutId: Defusable

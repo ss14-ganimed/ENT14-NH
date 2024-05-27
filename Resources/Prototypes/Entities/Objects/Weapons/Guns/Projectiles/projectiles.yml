@@ -105,25 +105,6 @@
         Blunt: 1
 
 - type: entity
-  id: BaseBulletRubber
-  name: base bullet rubber
-  parent: BaseBullet
-  noSpawn: true
-  components:
-  - type: Sprite
-    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
-    layers:
-    - state: rubber
-  - type: Projectile
-    damage:
-      types:
-        Blunt: 3
-    soundHit:
-      path: /Audio/Weapons/Guns/Hits/snap.ogg
-  - type: StaminaDamageOnCollide
-    damage: 22 # 5 hits to stun sounds reasonable
-
-- type: entity
   id: BaseBulletIncendiary
   name: base bullet incendiary
   parent: BaseBullet
@@ -929,6 +910,9 @@
   parent: BaseBullet
   noSpawn: true
   components:
+  - type: Reflective
+    reflective:
+    - Energy
   - type: FlyBySound
     sound:
       collection: EnergyMiss
@@ -937,8 +921,8 @@
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles_tg.rsi
     layers:
-    - state: omnilaser
-      shader: unshaded
+    - state: omnilaser_greyscale
+      color: "#ff0000"
   - type: Physics
   - type: Fixtures
     fixtures:
@@ -1044,6 +1028,9 @@
   parent: BaseBullet
   noSpawn: true
   components:
+  - type: Reflective
+    reflective:
+    - Energy
   - type: FlyBySound
     sound:
       collection: EnergyMiss
@@ -1085,6 +1072,9 @@
   parent: BaseBullet
   noSpawn: true
   components:
+  - type: Reflective
+    reflective:
+    - Energy
   - type: FlyBySound
     sound:
       collection: EnergyMiss
@@ -1126,6 +1116,9 @@
   parent: BaseBullet
   noSpawn: true
   components:
+  - type: Reflective
+    reflective:
+    - Energy
   - type: FlyBySound
     sound:
       collection: EnergyMiss
@@ -1165,6 +1158,9 @@
   parent: BaseBullet
   noSpawn: true
   components:
+  - type: Reflective
+    reflective:
+    - Energy
   - type: FlyBySound
     sound:
       collection: EnergyMiss
@@ -1201,6 +1197,9 @@
   parent: BaseBullet
   noSpawn: true
   components:
+  - type: Reflective
+    reflective:
+    - Energy
   - type: FlyBySound
     sound:
       collection: EnergyMiss

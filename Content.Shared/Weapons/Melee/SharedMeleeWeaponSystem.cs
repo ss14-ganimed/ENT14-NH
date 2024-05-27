@@ -277,7 +277,10 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
         if (EntityManager.TryGetComponent(entity, out HandsComponent? hands) &&
             hands.ActiveHandEntity is { } held)
         {
-            if (EntityManager.TryGetComponent(held, out melee))
+            // Make sure the entity is a weapon AND it doesn't need
+            // to be equipped to be used (E.g boxing gloves).
+            if (EntityManager.TryGetComponent(held, out melee) &&
+                !melee.MustBeEquippedToUse)
             {
                 weaponUid = held;
                 return true;
@@ -312,7 +315,7 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
 
     public bool AttemptLightAttack(EntityUid user, EntityUid weaponUid, MeleeWeaponComponent weapon, EntityUid target)
     {
-        if (!TryComp<TransformComponent>(target, out var targetXform))
+        if (!TryComp(target, out TransformComponent? targetXform))
             return false;
 
         return AttemptAttack(user, weaponUid, weapon, new LightAttackEvent(GetNetEntity(target), GetNetEntity(weaponUid), GetNetCoordinates(targetXform.Coordinates)), null);
@@ -320,7 +323,7 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
 
     public bool AttemptDisarmAttack(EntityUid user, EntityUid weaponUid, MeleeWeaponComponent weapon, EntityUid target)
     {
-        if (!TryComp<TransformComponent>(target, out var targetXform))
+        if (!TryComp(target, out TransformComponent? targetXform))
             return false;
 
         return AttemptAttack(user, weaponUid, weapon, new DisarmAttackEvent(GetNetEntity(target), GetNetCoordinates(targetXform.Coordinates)), null);
@@ -443,7 +446,7 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
         // For consistency with wide attacks stuff needs damageable.
         if (Deleted(target) ||
             !HasComp<DamageableComponent>(target) ||
-            !TryComp<TransformComponent>(target, out var targetXform) ||
+            !TryComp(target, out TransformComponent? targetXform) ||
             // Not in LOS.
             !InRange(user, target.Value, component.Range, session))
         {
@@ -531,7 +534,7 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
     private bool DoHeavyAttack(EntityUid user, HeavyAttackEvent ev, EntityUid meleeUid, MeleeWeaponComponent component, ICommonSession? session)
     {
         // TODO: This is copy-paste as fuck with DoPreciseAttack
-        if (!TryComp<TransformComponent>(user, out var userXform))
+        if (!TryComp(user, out TransformComponent? userXform))
             return false;
 
         var targetMap = GetCoordinates(ev.Coordinates).ToMap(EntityManager, TransformSystem);
@@ -745,7 +748,7 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
     private void DoLungeAnimation(EntityUid user, EntityUid weapon, Angle angle, MapCoordinates coordinates, float length, string? animation)
     {
         // TODO: Assert that offset eyes are still okay.
-        if (!TryComp<TransformComponent>(user, out var userXform))
+        if (!TryComp(user, out TransformComponent? userXform))
             return;
 
         var invMatrix = TransformSystem.GetInvWorldMatrix(userXform);

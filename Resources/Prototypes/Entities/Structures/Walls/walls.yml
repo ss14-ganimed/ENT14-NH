@@ -135,7 +135,7 @@
   - type: RCDDeconstructable
     cost: 6
     delay: 8
-    fx: EffectRCDDeconstruct8    
+    fx: EffectRCDDeconstruct8
   - type: Destructible
     thresholds:
     - trigger:
@@ -169,7 +169,7 @@
     sprite: Structures/Walls/meat.rsi
   - type: Construction
     graph: Girder
-    node: bananiumWall
+    node: meatWall
   - type: Destructible
     thresholds:
     - trigger:
@@ -262,7 +262,7 @@
   - type: RCDDeconstructable
     cost: 6
     delay: 8
-    fx: EffectRCDDeconstruct8   
+    fx: EffectRCDDeconstruct8
   - type: Destructible
     thresholds:
     - trigger:
@@ -298,7 +298,7 @@
   - type: RCDDeconstructable
     cost: 6
     delay: 8
-    fx: EffectRCDDeconstruct8  
+    fx: EffectRCDDeconstruct8
   - type: Destructible
     thresholds:
     - trigger:
@@ -419,7 +419,7 @@
   - type: RCDDeconstructable
     cost: 6
     delay: 8
-    fx: EffectRCDDeconstruct8    
+    fx: EffectRCDDeconstruct8
   - type: Destructible
     thresholds:
     - trigger:
@@ -660,7 +660,7 @@
   - type: RCDDeconstructable
     cost: 6
     delay: 8
-    fx: EffectRCDDeconstruct8    
+    fx: EffectRCDDeconstruct8
   - type: Destructible
     thresholds:
     - trigger:
@@ -696,7 +696,7 @@
   - type: RCDDeconstructable
     cost: 6
     delay: 8
-    fx: EffectRCDDeconstruct8    
+    fx: EffectRCDDeconstruct8
   - type: Destructible
     thresholds:
     - trigger:
@@ -873,7 +873,7 @@
   - type: RCDDeconstructable
     cost: 6
     delay: 8
-    fx: EffectRCDDeconstruct8    
+    fx: EffectRCDDeconstruct8
   - type: Destructible
     thresholds:
     - trigger:
@@ -1213,7 +1213,7 @@
   name: force wall
   components:
     - type: TimedDespawn
-      lifetime: 20
+      lifetime: 12
     - type: Tag
       tags:
         - Wall
@@ -1253,7 +1253,7 @@
   - type: RCDDeconstructable
     cost: 6
     delay: 8
-    fx: EffectRCDDeconstruct8    
+    fx: EffectRCDDeconstruct8
   - type: Destructible
     thresholds:
     - trigger:
