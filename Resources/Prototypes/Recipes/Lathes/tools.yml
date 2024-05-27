@@ -214,7 +214,8 @@
   materials:
     Steel: 800
     Plasma: 200
-
+    Titanium: 100
+    
 - type: latheRecipe
   id: JawsOfLife
   result: JawsOfLife
@@ -225,6 +226,7 @@
     Glass: 500
     Plasma: 300
     Gold: 50
+    Titanium: 100
 
 - type: latheRecipe
   id: HoloprojectorField

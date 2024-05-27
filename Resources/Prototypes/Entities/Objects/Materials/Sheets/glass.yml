@@ -532,3 +532,67 @@
   - type: Stack
     stackType: ClockworkGlass
     count: 1
+
+- type: entity
+  parent: SheetGlassBase
+  id: SheetPlastitaniumGlass
+  name: plastitanium glass
+  description: A sheet of brass-hardened glass, primarily used by clockwork enthusiasts and remnants of Ratvarian cults.
+  suffix: Full
+  components:
+  - type: PhysicalComposition
+    materialComposition:
+      PlastitaniumGlass: 100
+  - type: Stack
+    stackType: PlastitaniumGlass
+    baseLayer: base
+    layerStates:
+    - plastitaniumglass
+    - plastitaniumglass_2
+    - plastitaniumglass_3
+  - type: Sprite
+    state: plastitaniumglass_3
+    layers:
+    - state: plastitaniumglass_3
+      map: ["base"]
+  - type: Item
+    heldPrefix: plastitaniumglass
+  - type: Construction
+    graph: Glass
+    node: SheetPlastitaniumGlass
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: GlassBreak
+          params:
+            volume: -4
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          ShardGlass:
+            min: 1
+            max: 1
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: SheetPlastitaniumGlass
+  id: SheetPlastitaniumGlass1
+  name: plastitanium glass
+  suffix: Single
+  components:
+  - type: Sprite
+    state: plastitaniumglass
+  - type: Stack
+    stackType: PlastitaniumGlass
+    count: 1

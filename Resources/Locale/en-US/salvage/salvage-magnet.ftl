@@ -9,6 +9,7 @@ salvage-expedition-window-progression = Progression
 
 salvage-magnet-resources = {$resource ->
     [OreIron] Iron
+    [OreTitanium] Titanium
     [OreCoal] Coal
     [OreQuartz] Quartz
     [OreSalt] Salt

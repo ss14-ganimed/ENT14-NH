@@ -176,3 +176,18 @@
   completetime: 1
   materials:
     Wood: 50
+
+- type: latheRecipe
+  id: SheetTitanium1
+  result: SheetTitanium1
+  applyMaterialDiscount: false
+  completetime: 2
+  materials:
+    RawTitanium: 100
+
+- type: latheRecipe
+  id: SheetTitanium30
+  result: SheetTitanium
+  completetime: 2
+  materials:
+    RawTitanium: 3000

@@ -89,6 +89,24 @@
     - !type:TileNotBlocked    
 
 - type: construction
+  name: plastitanium wall
+  id: WallPlastitanium
+  graph: Girder
+  startNode: start
+  targetNode: wallplastitanium
+  category: construction-category-structures
+  description: Keeps the air in and the greytide out.
+  icon:
+    sprite: Structures/Walls/plastitanium.rsi
+    state: full
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked    
+
+- type: construction
   name: clock wall
   id: WallClock
   graph: ClockworkGirder
@@ -429,6 +447,43 @@
   objectType: Structure
   placementMode: SnapgridCenter
   canRotate: false
+
+- type: construction
+  name: plastitanium window
+  id: PlastitaniumWindow
+  graph: Window
+  startNode: start
+  targetNode: plastitaniumwindow
+  category: construction-category-structures
+  description: Clear but tough.
+  canBuildInImpassable: true
+  conditions:
+    - !type:EmptyOrWindowValidInTile
+    - !type:NoWindowsInTile
+  icon:
+    sprite: Structures/Windows/plastitanium_window.rsi
+    state: full
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+
+- type: construction
+  name: diagonal plastitanium window
+  id: PlastitaniumWindowDiagonal
+  graph: WindowDiagonal
+  startNode: start
+  targetNode: plastitaniumwindowdiagonal
+  category: construction-category-structures
+  description: Clear but tough.
+  canBuildInImpassable: true
+  conditions:
+    - !type:EmptyOrWindowValidInTile
+    - !type:NoWindowsInTile
+  icon:
+    sprite: Structures/Windows/plastitanium_window_diagonal.rsi
+    state: state1
+  objectType: Structure
+  placementMode: SnapgridCenter
 
 - type: construction
   name: diagonal reinforced window

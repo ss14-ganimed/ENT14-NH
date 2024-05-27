@@ -8,6 +8,7 @@ salvage-expedition-window-progression = Прогресс
 salvage-magnet-resources =
     { $resource ->
         [OreIron] Железо
+        [OreTitanium] Титан
         [OreCoal] Уголь
         [OreQuartz] Кварц
         [OreGold] Золото

@@ -1,0 +1,20 @@
+- type: entity
+  id: ForgeMachineCircuitboard
+  parent: BaseMachineCircuitboard
+  name: Forge board
+  description: A machine board for a forge
+  components:
+    - type: MachineBoard
+      prototype: Forge
+      requirements:
+        Manipulator: 2
+        Capacitor: 2
+        MatterBin: 3
+      materialRequirements:
+        Glass: 2
+        Steel: 3
+        Titanium: 5
+        Gold: 2
+        CableHV: 3
+    - type: Item
+      size: Normal

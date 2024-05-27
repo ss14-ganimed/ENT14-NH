@@ -49,7 +49,7 @@
   result: BluespaceBeaker
   completetime: 2
   materials:
-    Steel: 500
+    Titanium: 500
     Plastic: 500
     Plasma: 150
     Silver: 50
@@ -59,7 +59,7 @@
   result: SyringeBluespace
   completetime: 2
   materials:
-    Steel: 100
+    Titanium: 100
     Plastic: 150
     Glass: 250
     Plasma: 100

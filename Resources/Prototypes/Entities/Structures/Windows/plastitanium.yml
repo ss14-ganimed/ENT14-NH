@@ -39,6 +39,9 @@
             max: 2
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
+  - type: Construction
+    graph: Window
+    node: plastitaniumwindow
   - type: IconSmooth
     base: ptwindow
   - type: Appearance
@@ -92,3 +95,6 @@
   - type: DamageVisuals
     damageOverlay:
       sprite: Structures/Windows/cracks_diagonal.rsi
+  - type: Construction
+    graph: Window
+    node: plastitaniumwindowdiagonal

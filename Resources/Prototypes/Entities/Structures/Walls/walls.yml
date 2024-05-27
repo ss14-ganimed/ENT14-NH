@@ -472,6 +472,9 @@
     - type: Tag
       tags:
         - Wall
+    - type: Construction
+      graph: Girder
+      node: wallplastitanium
     - type: Destructible
       thresholds:
         - trigger:

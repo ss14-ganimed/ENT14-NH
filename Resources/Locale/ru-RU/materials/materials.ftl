@@ -5,6 +5,8 @@ materials-plasma-glass = плазменное стекло
 materials-reinforced-plasma-glass = плазменное бронестекло
 # Metals
 materials-steel = сталь
+materials-titanium = титан
+materials-plastitanium = пластитан
 materials-gold = золото
 materials-silver = серебро
 materials-plasteel = пласталь
@@ -26,6 +28,7 @@ materials-coal = уголь
 materials-gunpowder = чёрный порох
 # Ores
 materials-raw-iron = руда железа
+materials-raw-titanium = руда титана
 materials-raw-quartz = руда кварца
 materials-raw-gold = руда золота
 materials-raw-silver = руда серебра
