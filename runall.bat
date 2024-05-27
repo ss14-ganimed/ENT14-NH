@@ -1,4 +1,4 @@
 @echo off
-call runclient.bat %*
 call runserver.bat %*
+call runclient.bat %*
 pause
