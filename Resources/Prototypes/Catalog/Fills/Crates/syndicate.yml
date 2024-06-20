@@ -1,6 +1,6 @@
 - type: entity
   id: CrateSyndicateSurplusBundle
-  parent: CrateSyndicate
+  parent: [ CrateSyndicate, StorePresetUplink ]
   name: Syndicate surplus crate
   description: Contains 50 telecrystals worth of completely random Syndicate items. It can be useless junk or really good.
   components:
@@ -23,8 +23,22 @@
       - id: DoubleEmergencyNitrogenTankFilled
 
 - type: entity
-  id: CrateSyndicateSuperSurplusBundle
+  id: CrateMaulerBundle
+  suffix: Filled
   parent: CrateSyndicate
+  name: Mauler bundle
+  description: Contains everything except a big gun to go postal.
+  components:
+  - type: StorageFill
+    contents:
+      - id: MechMaulerBattery
+      - id: MechMssileWeapon
+      - id: MechHadesWeapon
+      - id: MechScattershotWeapon
+
+- type: entity
+  id: CrateSyndicateSuperSurplusBundle
+  parent: [ CrateSyndicate, StorePresetUplink ]
   name: Syndicate super surplus crate
   description: Contains 125 telecrystals worth of completely random Syndicate items.
   components:

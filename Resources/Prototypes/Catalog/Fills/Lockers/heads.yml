@@ -7,6 +7,7 @@
     contents:
       - id: BoxFolderQmClipboard
       - id: CargoRequestComputerCircuitboard
+      - id: CargoSaleComputerCircuitboard
       - id: CargoShuttleComputerCircuitboard
       - id: CargoShuttleConsoleCircuitboard
       - id: SalvageShuttleConsoleCircuitboard
@@ -223,6 +224,8 @@
   components:
   - type: StorageFill
     contents:
+      - id: GreySlimeExtract
+      - id: ClothingOuterReactiveArmor
       - id: ResearchComputerCircuitboard
       - id: ProtolatheMachineCircuitboard
       - id: CircuitImprinterMachineCircuitboard
@@ -243,6 +246,8 @@
   components:
   - type: StorageFill
     contents:
+      - id: GreySlimeExtract
+      - id: ClothingOuterReactiveArmor
       - id: ResearchComputerCircuitboard
       - id: ProtolatheMachineCircuitboard
       - id: CircuitImprinterMachineCircuitboard
