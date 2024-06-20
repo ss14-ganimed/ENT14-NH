@@ -91,7 +91,7 @@
   id: BannerScience
   parent: BannerBase
   name: science banner
-  description: A banner displaying the colors of the science department. Where stupidity is proven greater than the universe.
+  description: A banner displaying the colors of the science department. Where science has no bounds, and regulations are rarely followed.
   components:
   - type: Sprite
     sprite: Structures/Decoration/banner.rsi
@@ -101,7 +101,7 @@
   id: BannerSecurity
   parent: BannerBase
   name: security banner
-  description: A banner displaying the colors of the shitcurity department. Security, my bad.
+  description: A banner displaying the colors of the security department. You're surprised it's not vandalised.
   components:
   - type: Sprite
     sprite: Structures/Decoration/banner.rsi
@@ -147,4 +147,13 @@
     sprite: Structures/Decoration/banner.rsi
     state: banner-green
 
+- type: entity
+  id: BannerUSSP
+  parent: BannerBase
+  name: USSP banner
+  description: A banner displaying colors of communism. Proletarians of all countries, unite!
+  components:
+  - type: Sprite
+    sprite: Structures/Decoration/banner.rsi
+    state: banner-ussp
 

@@ -12,7 +12,7 @@
         Manipulator: 5
         Capacitor: 5
         MatterBin: 15
-      materialRequirements:
+      stackRequirements:
         Glass: 15
         Steel: 15
         Titanium: 15
@@ -21,8 +21,7 @@
         CableHV: 5
       tagRequirements:
         GlassBeaker:
-          Amount: 5
-          DefaultPrototype: Beaker
-          ExamineName: Glass Beaker
+          amount: 5
+          defaultPrototype: Beaker
     - type: Item
       size: Normal

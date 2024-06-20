@@ -28,6 +28,7 @@
     ReflectiveCoatStealObjective: 0.5
     CriminalGloves: 0.5
     CaptainSabreObjective: 0.5
+    ReactiveArmorStealObjective: 0.5
 
 - type: weightedRandom
   id: TraitorObjectiveGroupKill
@@ -60,13 +61,6 @@
   weights:
     ThiefObjectiveGroupStructure: 0 #Temporarily disabled until obvious ways to steal structures are added
     ThiefObjectiveGroupAnimal: 2
-
-- type: weightedRandom
-  id: ThiefEscapeObjectiveGroups
-  weights:
-    ThiefObjectiveGroupEscape: 1
-
-
 
 - type: weightedRandom
   id: ThiefObjectiveGroupCollection
