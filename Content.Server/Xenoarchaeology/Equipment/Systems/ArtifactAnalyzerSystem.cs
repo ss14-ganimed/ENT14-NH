@@ -377,13 +377,15 @@ public sealed class ArtifactAnalyzerSystem : EntitySystem
         if (pointValue == 0)
             return;
 
+        var creditsValue = pointValue / 4;
+
         _research.ModifyServerPoints(server.Value, pointValue, serverComponent);
 
         var stationUid = _station.GetOwningStation(uid);
 
         if (stationUid != null && pointValue != null && TryComp(stationUid, out StationBankAccountComponent? bank))
         {
-            bank.Balance += (int) pointValue;
+            bank.Balance += (int) creditsValue;
         }
 
         _artifact.AdjustConsumedPoints(artifact.Value, pointValue);
