@@ -5,7 +5,7 @@ namespace Content.Server.Cargo.Components;
 /// <summary>
 /// Added to the abstract representation of a station to track its money.
 /// </summary>
-[RegisterComponent, Access(typeof(SharedCargoSystem))]
+[RegisterComponent]
 public sealed partial class StationBankAccountComponent : Component
 {
     [ViewVariables(VVAccess.ReadWrite), DataField("balance")]
@@ -15,5 +15,5 @@ public sealed partial class StationBankAccountComponent : Component
     /// How much the bank balance goes up per second, every Delay period. Rounded down when multiplied.
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite), DataField("increasePerSecond")]
-    public int IncreasePerSecond = 1;
+    public int IncreasePerSecond = 5;
 }

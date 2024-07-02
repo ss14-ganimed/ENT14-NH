@@ -7,6 +7,13 @@ using Content.Server.Xenoarchaeology.Equipment.Components;
 using Content.Server.Xenoarchaeology.XenoArtifacts;
 using Content.Server.Xenoarchaeology.XenoArtifacts.Events;
 using Content.Shared.Audio;
+using Content.Server.Station.Components;
+using Content.Shared.Cargo.Components;
+using Content.Shared.Cargo.Events;
+using Content.Server.Cargo.Components;
+using Content.Shared.Cargo.BUI;
+using Content.Server.Cargo.Systems;
+using Content.Server.Station.Systems;
 using Content.Shared.DeviceLinking;
 using Content.Shared.DeviceLinking.Events;
 using Content.Shared.Placeable;
@@ -21,6 +28,7 @@ using Robust.Shared.Audio.Systems;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
+using Robust.Shared.Map;
 
 namespace Content.Server.Xenoarchaeology.Equipment.Systems;
 
@@ -41,6 +49,7 @@ public sealed class ArtifactAnalyzerSystem : EntitySystem
     [Dependency] private readonly ResearchSystem _research = default!;
     [Dependency] private readonly MetaDataSystem _metaSystem = default!;
     [Dependency] private readonly TraversalDistorterSystem _traversalDistorter = default!;
+    [Dependency] private readonly StationSystem _station = default!;
 
     /// <inheritdoc/>
     public override void Initialize()
@@ -369,6 +378,14 @@ public sealed class ArtifactAnalyzerSystem : EntitySystem
             return;
 
         _research.ModifyServerPoints(server.Value, pointValue, serverComponent);
+
+        var stationUid = _station.GetOwningStation(uid);
+
+        if (stationUid != null && pointValue != null && TryComp(stationUid, out StationBankAccountComponent? bank))
+        {
+            bank.Balance += (int) pointValue;
+        }
+
         _artifact.AdjustConsumedPoints(artifact.Value, pointValue);
 
         _audio.PlayPvs(component.ExtractSound, component.AnalyzerEntity.Value, AudioParams.Default.WithVolume(2f));
