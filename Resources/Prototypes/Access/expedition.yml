@@ -1,0 +1,28 @@
+- type: accessLevel
+  id: ExpeditionLeader
+  name: id-card-access-level-expedition-leader
+
+- type: accessLevel
+  id: ExpeditionHangar
+  name: id-card-access-level-expedition-hangar
+
+- type: accessLevel
+  id: ExpeditionPilot
+  name: id-card-access-level-expedition-pilot
+
+- type: accessLevel
+  id: Expedition
+  name: id-card-access-level-expedition
+
+- type: accessLevel
+  id: ExpeditionEquipment
+  name: id-card-access-level-expedition-equipment
+
+- type: accessGroup
+  id: Expedition
+  tags:
+  - ExpeditionLeader
+  - ExpeditionHangar
+  - ExpeditionPilot
+  - Expedition
+  - ExpeditionEquipment

@@ -7,6 +7,22 @@
   name: id-card-access-level-cargo
 
 - type: accessLevel
+  id: CargoHangar
+  name: id-card-access-level-cargo-hangar
+
+- type: accessLevel
+  id: CargoStorage
+  name: id-card-access-level-cargo-storage
+
+- type: accessLevel
+  id: CargoEquipment
+  name: id-card-access-level-cargo-equipment
+
+- type: accessLevel
+  id: Factory
+  name: id-card-access-level-factory
+
+- type: accessLevel
   id: Salvage
   name: id-card-access-level-salvage
 

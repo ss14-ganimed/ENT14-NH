@@ -1,4 +1,8 @@
 - type: accessLevel
+  id: HeadOfPersonnel
+  name: id-card-access-level-head-of-personnel
+
+- type: accessLevel
   id: Bar
   name: id-card-access-level-bar
 

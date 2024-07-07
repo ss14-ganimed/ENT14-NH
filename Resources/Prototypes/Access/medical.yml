@@ -3,8 +3,44 @@
   name: id-card-access-level-chief-medical-officer
 
 - type: accessLevel
+  id: SeniorMedicalOfficer
+  name: id-card-access-level-senior-medical-officer
+
+- type: accessLevel
   id: Medical
   name: id-card-access-level-medical
+
+- type: accessLevel
+  id: Surgery
+  name: id-card-access-level-surgery
+
+- type: accessLevel
+  id: Virologist
+  name: id-card-access-level-virologist
+
+- type: accessLevel
+  id: Genetic
+  name: id-card-access-level-genetic
+
+- type: accessLevel
+  id: Coroner
+  name: id-card-access-level-coroner
+
+- type: accessLevel
+  id: Psychologist
+  name: id-card-access-level-psychologist
+
+- type: accessLevel
+  id: MedicalStorage
+  name: id-card-access-level-medical-storage
+
+- type: accessLevel
+  id: MedicalEquipment
+  name: id-card-access-level-medical-equipment
+
+- type: accessLevel
+  id: Orderly
+  name: id-card-access-level-orderly
 
 - type: accessLevel
   id: Chemistry

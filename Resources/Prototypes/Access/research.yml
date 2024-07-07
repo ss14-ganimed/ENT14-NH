@@ -3,8 +3,32 @@
   name: id-card-access-level-research-director
 
 - type: accessLevel
+  id: SeniorResearcher
+  name: id-card-access-level-senior-researcher
+
+- type: accessLevel
   id: Research
   name: id-card-access-level-research
+
+- type: accessLevel
+  id: Anomaly
+  name: id-card-access-level-anomaly
+
+- type: accessLevel
+  id: XenoBio
+  name: id-card-access-level-xenobio
+
+- type: accessLevel
+  id: XenoArch
+  name: id-card-access-level-xenoarch
+
+- type: accessLevel
+  id: ResearchStorage
+  name: id-card-access-level-research-storage
+
+- type: accessLevel
+  id: ResearchEquipment
+  name: id-card-access-level-research-equipment
 
 - type: accessLevel
   id: Robotics

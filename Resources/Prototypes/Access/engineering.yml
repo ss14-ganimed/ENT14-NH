@@ -3,8 +3,44 @@
   name: id-card-access-level-chief-engineer
 
 - type: accessLevel
+  id: SeniorEngineer
+  name: id-card-access-level-senior-engineer
+
+- type: accessLevel
   id: Engineering
   name: id-card-access-level-engineering
+
+- type: accessLevel
+  id: EngineeringHangar
+  name: id-card-access-level-engineering-hangar
+
+- type: accessLevel
+  id: EngineeringStorage
+  name: id-card-access-level-engineering-storage
+
+- type: accessLevel
+  id: EngineeringEquipment
+  name: id-card-access-level-engineering-equipment
+
+- type: accessLevel
+  id: Warp
+  name: id-card-access-level-warp
+
+- type: accessLevel
+  id: Generator
+  name: id-card-access-level-generator
+
+- type: accessLevel
+  id: Shield
+  name: id-card-access-level-shield
+
+- type: accessLevel
+  id: Mechanic
+  name: id-card-access-level-mechanic
+
+- type: accessLevel
+  id: Engine
+  name: id-card-access-level-engine
 
 - type: accessLevel
   id: Atmospherics

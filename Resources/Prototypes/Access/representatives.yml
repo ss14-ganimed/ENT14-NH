@@ -1,0 +1,23 @@
+- type: accessLevel
+  id: NTRepresentative
+  name: id-card-access-level-ntr
+
+- type: accessLevel
+  id: Lawyer
+  name: id-card-access-level-lawyer
+
+- type: accessLevel
+  id: Representatives
+  name: id-card-access-level-representatives
+
+- type: accessLevel
+  id: CorporateSupervisor
+  name: id-card-access-level-corporate-supervisor
+
+- type: accessGroup
+  id: Representatives
+  tags:
+  - Lawyer
+  - NTRepresentative
+  - Representatives
+  - CorporateSupervisor

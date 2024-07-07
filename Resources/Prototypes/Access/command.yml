@@ -7,15 +7,30 @@
   name: id-card-access-level-captain
 
 - type: accessLevel
-  id: HeadOfPersonnel
-  name: id-card-access-level-head-of-personnel
+  id: FirstMate
+  name: id-card-access-level-first-mate
+
+- type: accessLevel
+  id: CommandOfficer
+  name: id-card-access-level-command-officer
+
+- type: accessLevel
+  id: Steering
+  name: id-card-access-level-steering
+
+- type: accessLevel
+  id: OperationsOfficer
+  name: id-card-access-level-operations-officer
+
+- type: accessLevel
+  id: CommandArsenal
+  name: id-card-access-level-command-arsenal
 
 - type: accessGroup
   id: Command
   tags:
   - Command
   - Captain
-  - HeadOfPersonnel
   - Cryogenics
 
 - type: accessLevel

@@ -3,8 +3,24 @@
   name: id-card-access-level-head-of-security
 
 - type: accessLevel
+  id: Ensing
+  name: id-card-access-level-ensign
+
+- type: accessLevel
   id: Security
   name: id-card-access-level-security
+
+- type: accessLevel
+  id: Instructor
+  name: id-card-access-level-instructor
+
+- type: accessLevel
+  id: Evidence
+  name: id-card-access-level-evidence
+
+- type: accessLevel
+  id: SecurityEquipment
+  name: id-card-access-level-security-equipment
 
 - type: accessLevel
   id: Armory
